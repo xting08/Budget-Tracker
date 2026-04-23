@@ -1,0 +1,223 @@
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 2em 0 0 0;
+    margin: 0;
+}
+
+#profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+}
+
+#profile-picture-section, #password-section {
+    background-color: #E8E3CD;
+    border-radius: 1em;
+    width: 40%;
+    border: 2px solid #8c716f;
+}
+
+#profile-picture-section {
+    padding: 2em 2em 0 2em;
+}
+
+#password-section {
+    padding: 2em;
+}
+
+#profile-picture-section h2, #password-section h2 {
+    color: #232640;
+    margin-top: 0em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#current-profile-pic {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+#profile-pic-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+
+
+#profile-pic-preview {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #232640;
+}
+
+#user-info {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.info-group {
+    margin-bottom: 1.5em;
+}
+
+.info-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #232640;
+    font-weight: bold;
+}
+
+.info-group input {
+    width: 98%;
+    padding: 0.8em 0 0.8em 0.5em;
+    border: 2px solid #E5B5B2;
+    outline: 2px solid #e1cac8;
+    font-style: italic;
+    border-radius: 0.5em;
+    background-color: #E8E3CD;
+    color: #a2acb4;
+    font-size: 0.9em;
+    cursor: default;
+}
+
+.info-group input:read-only {
+    background-color: #f7f2dd;
+}
+
+#profile-pic-upload {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+#profile-pic-input {
+    display: none;
+}
+
+.upload-btn {
+    background-color: #294c4b;
+    color: #E8E3CD;
+    padding: 0.9em 1.5em;
+    width: 100%;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #232640;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.upload-btn:hover {
+    background-color: #232640;
+    transform: scale(1.05);
+}
+
+#update-pic-btn {
+    width: 50%;
+    background-color: #294c4b;
+    color: #E8E3CD;
+    padding: 1em;
+    border: 2px solid #232640;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#update-password-btn {
+    width: 100%;
+    background-color: #294c4b;
+    color: #E8E3CD;
+    padding: 1.2em;
+    border: 2px solid #232640;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#update-pic-btn:hover, #update-password-btn:hover {
+    background-color: #232640;
+    transform: scale(1.02);
+}
+
+#password-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.3em;
+    width: 100%;
+    gap: 0.5em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #232640;
+    font-weight: bold;
+}
+
+.password-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input-container input {
+    width: 100%;
+    padding: 1em;
+    border: 2px solid #232640;
+    border-radius: 0.5em;
+    background-color: #fffbea;
+    color: #232640;
+}
+
+.password-input-container input:focus {
+    outline: none;
+    border-color: #294c4b;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 1em;
+    cursor: pointer;
+    color: #232640;
+}
+
+.toggle-password:hover {
+    color: #294c4b;
+}
+
+@media (max-width: 768px) {
+    #profile-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    #profile-picture-section, #password-section {
+        width: 90%;
+    }
+} 

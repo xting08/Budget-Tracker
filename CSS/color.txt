@@ -1,0 +1,44 @@
+Color Template
+#a0bfbf
+#f7f2dd
+#f1ecd7
+#E8E3CD
+#E5B5B2
+#e1cac8
+#8c716f
+#5c4442
+#5f2824
+#4e606f
+#294c4b
+#bdcdd9
+#6C8396
+#232640
+
+#ffbcbc
+#ffdba8
+#fff8b7
+#e3ffa3
+#b0ffb1
+#c1fffe
+#9edbec
+#9ea3ec
+#de9eec
+
+#772e2e
+#976e33
+#ab9f34
+#7fa131
+#319832
+#2a7c7b
+#255f6f
+#161a5b
+#44154f
+
+** Normal API Key **
+AIzaSyBaMe74uc_u2CyX1cSZ3G9Rkcii31JkUVE
+
+** Backup API Key **
+AIzaSyDY4BAnM3HxhOC5E0nNX1QRVp2GVW0y7_A
+
+** Backup API Key 2 **
+AIzaSyD8ssnI4PDEBBwbguA5HtY_t8-WmF9w024

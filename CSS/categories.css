@@ -1,0 +1,327 @@
+#transaction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0em;
+    padding: 0;
+    width: 100%;
+    gap: 3em;
+}
+
+#total-transaction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    gap: 1.5em;
+}
+
+#chart-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#chart {
+    width: 55% !important;
+    height: 277px !important;
+    display: block;
+    margin-right: 1em;
+    padding: 1em;
+}
+
+#amount-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    gap: 1.5em;
+    width: 100%;
+}
+.amount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8E3CD;
+    margin: 0;
+    width: 100%;
+    padding: 1em 0em;
+    border-radius: 1em;
+    font-size: 1.3em;
+    font-weight: bolder;
+    gap: 0.5em;
+}
+
+.amount > h1 {
+    margin: 0;
+    padding: 0;
+}   
+
+#balance {
+    border: 3px solid #232640;
+    color: #232640;
+}
+
+#total-income {
+    border: 3px solid #294c4b;
+    color: #294c4b;
+}
+
+#total-expense {
+    border: 3px solid #5f2824;
+    color: #5f2824;
+}
+
+#add-transaction-form {
+    width: 100%;
+}
+
+#add-transaction-btn {
+    background-color: #294c4b;
+    color: #E8E3CD;
+    border: 3px solid #232640;
+    border-radius: 1em;
+    padding: 1.5em 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+#add-transaction-btn:hover {
+    transform: scale(1.03);
+}
+
+#transaction-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    margin-left: 1em;
+    padding-top: 1em;
+}
+
+#transaction-history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#transaction-history-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#transaction-history-item {
+    padding-right: 1em;
+    margin-top: 0.5em;
+    width: 98%;
+    height: 72vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+#transaction-history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+ #transaction-history-table td {
+    border-bottom: 1px dashed #232640;
+    padding: 0.7em 0.5em;
+}
+
+#transaction-history-table th {
+    padding: 0.9em 0.5em;
+    background-color: #4e606f;
+    color: #fffbea;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-size: 0.9em;
+}
+
+#transaction-history-table tr:hover {
+    background-color: #f1ecd7;
+}
+
+#transaction-history-table td {
+    background-color: #E8E3CD;
+}
+
+#table-transaction-name {
+    font-size: 1em;
+    color: #232640;
+}
+
+#table-date {
+    color: #6C8396;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+#table-amount {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1ecd7; 
+    border-radius: 1em;
+    border: 1px solid #E8E3CD;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e1cac8; 
+    border-radius: 1em;
+    border: 1px solid #E8E3CD;
+    transition: background 0.3s ease;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e1cac8; 
+    border: 1px solid #E5B5B2;
+  }
+
+#transaction-history-filter-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.7em;
+    width: 100%;
+    margin-bottom: -1em;
+}
+
+#transaction-history-filter-form select {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 2px solid #232640;
+    cursor: pointer;
+    font-size: 0.8em;
+    background-color: #fffbea;
+    color: #232640;
+}
+
+#transaction-history-filter-form select:focus {
+    outline: none;
+    border-color: #294c4b;
+}
+
+#transaction-history-filter-btn {
+    background-color: #294c4b;
+    color: #E8E3CD;
+    border: 2px solid #232640;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#transaction-history-filter-btn:hover {
+    transform: scale(1.05);
+    background-color: #232640;
+}
+
+#table-delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #5f2824;
+    transition: all 0.1s ease;
+    width: 100%;
+}
+
+#table-delete-disabled {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #acacac;
+    transition: all 0.1s ease;
+    width: 100%;
+}
+
+#table-delete-btn:hover {
+    color: #232640;
+    transform: scale(1.1);
+}
+
+#category-filter-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.7em;
+    width: 100%;
+    margin-bottom: -1em;
+}
+
+#category-filter-form {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.filter-btn {
+    padding: 0.5em 1.5em;
+    border: 2px solid #232640;
+    border-radius: 0.5em;
+    background-color: #E8E3CD;
+    color: #232640;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.filter-btn:hover {
+    transform: scale(1.05);
+}
+
+.filter-btn.active {
+    background-color: #232640;
+    color: #E8E3CD;
+}
+
+#income-btn.active {
+    background-color: #294c4b;
+    border-color: #294c4b;
+}
+
+#expense-btn.active {
+    background-color: #5f2824;
+    border-color: #5f2824;
+}
+

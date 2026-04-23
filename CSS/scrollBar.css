@@ -1,0 +1,43 @@
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+}
+
+/* Track (the background) */
+::-webkit-scrollbar-track {
+    background: #e1cac8;
+    padding: 0 8px; /* Adds space at left and right like Google Chrome */
+}
+  
+  /* Handle (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: #8c716f;
+    border-radius: 10px;
+    border: 1px solid #5c4442;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6C8396;
+  }
+
+.chart-legend::-webkit-scrollbar {
+    width: 5px;
+    margin-left: 10px;
+}
+
+.chart-legend::-webkit-scrollbar-track {
+    background: #e1cac8;
+    border-radius: 10px;
+}
+
+.chart-legend::-webkit-scrollbar-thumb {
+    background: #8c716f;
+    border-radius: 10px;
+}
+
+.chart-legend::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}

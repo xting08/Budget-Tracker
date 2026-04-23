@@ -1,0 +1,460 @@
+#dashboard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 83vh;
+    gap: 1.5em;
+    margin-top: 2em;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    gap: 1.5em;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 2px dashed #adb8c0;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+#transaction-container {
+    width: 70%;
+    height: 90%;
+}
+#expense-habit-container {
+    width: 30%;
+    height: 90%;
+}
+
+#category-transaction-container {
+    width: 50%;
+    height: 90%;
+}
+
+#daily-expense-container {
+    width: 50%;
+    height: 90%;
+}
+
+#transaction-container .chart-header,
+#category-transaction-container .chart-header,
+#daily-expense-container .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#transaction-container .filter-buttons {
+    display: flex;
+    gap: 0.5em;
+}
+
+#transaction-container .filter-btn {
+    padding: 0.5em 1em;
+    border: 1px solid #adb8c0;
+    background-color: #f0f0f0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#transaction-container .filter-btn:hover {
+    background-color: #e0e0e0;
+    border-color: #516270;
+}
+
+#transaction-container .filter-btn.active {
+    background-color: #516270;
+    color: white;
+    border-color: #516270;
+}
+
+#category-transaction-container .month-selector,
+#daily-expense-container .month-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+#category-transaction-container .month-selector label,
+#daily-expense-container .month-selector label {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #516270;
+    white-space: nowrap;
+}
+
+#category-transaction-container .month-selector select,
+#daily-expense-container .month-selector select {
+    padding: 0.4em 0.8em;
+    border: 1px solid #adb8c0;
+    background-color: #f0f0f0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #516270;
+    min-width: 120px;
+}
+
+#category-transaction-container .month-selector select:focus,
+#daily-expense-container .month-selector select:focus {
+    outline: none;
+    border-color: #516270;
+    background-color: #fff;
+}
+
+#transaction-container .item-content-chart {
+    flex-direction: column;
+    position: relative;
+}
+
+#transaction-container .item-content-chart canvas {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.item-content h1 {
+    font-size: 1em;
+    font-weight: 600;
+    color: #516270;
+    text-align: center;
+    gap: 1.5em;
+    margin: 0;
+}
+
+.click-indicator {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #adb8c0;
+    font-style: italic;
+}
+
+.item-content-chart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 1.5em;
+}
+
+.item-content-chart canvas {
+    max-width: 240px;
+    max-height: 240px;
+}
+
+#daily-expense-container .item-content-chart canvas {
+    max-width: 100%;
+    height: 100%;
+}
+
+.chart-legend {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    font-weight: 600;
+    max-height: 90px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.legends-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+}
+
+.chart-legend-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.chart-legend-wrapper h2 {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #516270;
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 0em;
+    text-transform: uppercase;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+    margin-right: 0.7em;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+    border: 2px solid #5c4442;
+}
+
+.legend-label {
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #8c716f;
+}
+
+.legend-value {
+    width: 80px;
+    text-align: right;
+    color: #8c716f;
+}
+
+.legend-percentage {
+    width: 60px;
+    text-align: right;
+    color: #8c716f;
+}
+
+/* Chart Loader Styles */
+.chart-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(240, 240, 240, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border-radius: 1em;
+    transition: opacity 0.3s ease;
+}
+
+.loader-spinner {
+    border: 8px solid #d0dbe3;
+    border-top: 8px solid #516270;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+.chart-loader p {
+    margin-top: 1.5em;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #3e4c5a;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#info-icon {
+    font-size: 1.2em;
+    color: #516270;
+    cursor: pointer;
+    margin-left: -3em;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    left: 150%;
+    transform: translateX(-50%);
+    background-color: #efdbd9;
+    border: 1px dashed #516270;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    margin-top: 0.5em;
+    top: 150%;
+    width: 300px;
+}
+
+#info-icon:hover .tooltip-container {
+    position: absolute;
+    background-color: #efdbd9;
+    padding: 1em;
+    border-radius: 0.3em;
+    border: 1px dashed #516270;
+    transform: rotate(45deg);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+    left: -50%;
+    top: 150%;
+}
+
+
+#info-icon:hover .tooltip {
+    display: block;
+    opacity: 1;
+}
+
+#info-icon:hover {
+    color: #3e4c5a;
+    cursor: help;
+    transition: all 0.3s ease;
+}
+
+.tooltip p {
+    font-size: 0.6em;
+    color: #232640;
+    text-align: center;
+    margin: 0;
+}
+
+#expense-habit-container .chart-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#info-icon2 {
+    font-size: 1.2em;
+    color: #516270;
+    cursor: pointer;
+    margin-left: -3em;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tooltip2 {
+    display: none;
+    position: absolute;
+    left: -650%;
+    transform: translateX(-50%);
+    background-color: #efdbd9;
+    border: 1px dashed #516270;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    margin-top: 0.5em;
+    min-width: 200px;
+    top: -150%;
+}
+
+#info-icon2:hover .tooltip-container2 {
+    position: absolute;
+    background-color: #efdbd9;
+    padding: 1em;
+    border-radius: 0.3em;
+    border: 1px dashed #516270;
+    transform: rotate(45deg);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+    left: -250%;
+    top: -50%;
+}
+
+
+#info-icon2:hover .tooltip2 {
+    display: block;
+    opacity: 1;
+}
+
+#info-icon2:hover {
+    color: #3e4c5a;
+    cursor: help;
+    transition: all 0.3s ease;
+}
+
+.tooltip2 p {
+    font-size: 0.6em;
+    color: #232640;
+    text-align: center;
+    margin: 0;
+}
+
+#expense-habit-container .item-content-chat-box-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    margin-top: 1em;
+    position: relative;
+}
+
+#expense-habit-container .item-content-chat-box {
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+    border: 1px solid #e1cac8;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+    background-color: #ffffff28;
+    transition: all 0.3s ease;
+}
+
+#expense-habit-container .item-content-chat-box:hover {
+    background-color: #ffffff6a;
+    border: 1px solid #516270;
+}
+
+#expense-habit-container .item-content-chat-box .chat-box-header {  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+#expense-habit-container .item-content-chat-box .chat-box-header p {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #516270;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.chat-box-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.chat-box-content p {
+    font-size: 0.8em;
+    margin: 0;
+    color: #5c4442;
+    line-height: 1.4;
+    text-align: justify;
+}
+

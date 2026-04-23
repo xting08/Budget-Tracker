@@ -1,0 +1,145 @@
+#share-expense {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em 0em;
+}
+
+#add-share-expense-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#add-share-expense-container button {
+    width: 100%;
+    background-color: #294c4b;
+    color: #fffbea;
+    border: 2px solid #232640;
+    border-radius: 0.5em;
+    padding: 1.5em 0em;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#add-share-expense-container button:hover {
+    transform: scale(1.01);
+}
+
+/* Shared expense container - make scrollable */
+#shared-expense-container {
+    max-height: 72vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+#shared-expense-container::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 0.5em;
+}
+
+#shared-expense-container::-webkit-scrollbar-thumb {
+    background: #8c716f;
+    border-radius: 0.5em;
+}
+
+#shared-expense-container::-webkit-scrollbar-track {
+    background: #E8E3CD;
+    border-radius: 0.5em;
+}
+
+/* Shared expense card */
+.shared-info {
+    border: 2px solid #8c716f;
+    border-radius: 1em;
+    padding: 1em 2em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: #E8E3CD;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 100%;
+}
+
+.shared-expense-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #232640;
+    margin: 5px 0px;
+}
+
+.shared-expense-header > h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.shared-expense-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Progress bar container */
+.progress-bar-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    background: none;
+    overflow: hidden;
+    border: none;
+    margin-right: 20px;
+    width: 60%;
+}
+
+/* Progress bar filled and remaining */
+.progress-bar-filled {
+    background: #E5B5B2;
+    height: 100%;
+    border-radius: 0.5em 0 0 0.5em;
+    transition: width 0.4s;
+}
+
+.progress-bar-remaining {
+    background: #f7f2dd;
+    height: 100%;
+    border-radius: 0 0.5em 0.5em 0;
+    border-left: 2px solid #8c716f;
+    transition: width 0.4s;
+}
+
+/* Amount and usage */
+.shared-expense-amount {
+    margin-left: 10px;
+    width: 10%;
+    font-size: 0.7em;
+    color: #232640;
+}
+
+/* View details button */
+.view-details-btn {
+    background: #e1cac8;
+    color: #5c4442;
+    border: 1px solid #8c716f;
+    border-radius: 12px;
+    padding: 1em 1.3em;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.view-details-btn:hover {
+    background: #bdcdd9;
+}
+
+
+
+

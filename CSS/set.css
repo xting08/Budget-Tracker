@@ -1,0 +1,20 @@
+body {
+    background-color: #f7f2dd;
+    font-family: Poppins, sans-serif;
+    margin: 0em;
+    padding: 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+  

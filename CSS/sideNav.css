@@ -1,0 +1,178 @@
+#side-nav {
+    width: 20%;
+    height: 100vh;
+    background-color: #8c716f;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.07);
+    padding: 2em 1em 2em 0em;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transition: all 0.3s;
+    border-top-right-radius: 3em;
+    border-bottom-right-radius: 3em;
+    color: #E8E3CD;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#side-nav > #small-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    padding: 1.5em 0em 1.5em 0em;
+    margin: 0.5em 0em 0em -1.1em;
+    background-color: #E5B5B2;
+    border-radius: 0em 5em 5em 0em;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+}
+
+#side-nav > #small-profile:hover {
+    background-color: #E5B5B2;
+    transform: translateX(0.5em);
+}
+
+#side-nav > #small-profile > #profile-pic {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #232640;
+    margin: 0.5em 1em 0em 4em;
+    padding: 0em 0em 0em 0em;
+}
+
+#side-nav > #small-profile > #username {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #232640;
+    text-align: left;
+}
+
+#side-nav > #side-nav-options,
+#side-nav > #side-nav-options-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0em 0em 0em 0.5em;
+}
+
+#side-nav > #side-nav-options {
+    margin-top: -2em;
+}
+
+#side-nav > #side-nav-options > button {
+    width: 90%;
+    border-radius: 1.5em;
+    background-color: #f7f2dd;
+    border: 2px solid #5f2824;
+    margin: 1.3em 0em 0em 0em;
+    padding: 1.3em 0em 1.3em 0em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #5f2824;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#side-nav > #side-nav-options > button:hover {
+    background-color: #f7f2dd;
+    color: #5f2824;
+    transform: scale(1.05);
+}
+
+#side-nav > #side-nav-options-bottom > button {
+    width: 90%;
+    border-radius: 1.5em;
+    background-color: #5f2824;
+    border: 2px solid #f7f2dd;
+    margin: 1.3em 0em 0em 0em;
+    padding: 1.3em 0em 1.3em 0em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #f7f2dd;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#side-nav > #side-nav-options-bottom > button:hover {
+    background-color: #5f2824;
+    color: #f7f2dd;
+    transform: scale(1.05);
+}
+
+#main {
+    width: 77%;
+    margin-left: 20%;
+    padding: 1em 3em 1em 3em;
+}
+
+#main-title {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0em 0em 0em 0em;
+    align-items: center;
+}
+
+#main-title > #title-text,
+#main-title > a {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #232640;
+    padding: 0.5em 0em 0.5em 0em;
+    transition: all 0.3s;
+}
+
+#main-title > #title-text:hover {
+    color: #5f2824;
+    transform: scale(1.03);
+}
+
+#main-title hr {
+    width: 100%;
+    border: 0.01em solid #d2cbcb;
+}
+
+#logout-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+}
+
+form > #logout-btn {
+    background-color: #5f2824;
+    border: none;
+    color: #f7f2dd;
+    font-size: 1em;
+    cursor:pointer;
+    padding: 0.5em 1em 0.5em 1em;
+    width: 50%;
+    border-radius: 0.5em;
+    transition: all 0.3s;
+}
+
+form > #logout-btn:hover {
+    background-color: #5f2824;
+    color: #f7f2dd;
+    transform: scale(1.05);
+}
+
+
+
+

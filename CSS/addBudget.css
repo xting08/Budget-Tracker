@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 1.5em 2em;
+    background-color: #f7f2dd;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    width: 100%;
+    margin: 0;
+}
+
+#main-title {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0em 0em 0em 0em;
+    align-items: center;
+}
+
+#main-title > #title-text,
+#main-title > a {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #232640;
+    padding: 0.5em 0em 0.5em 0em;
+    transition: all 0.3s;
+}
+
+#main-title > #title-text:hover {
+    color: #5f2824;
+    transform: scale(1.03);
+}
+
+#main-title hr {
+    width: 100%;
+    border: 0.01em solid #d2cbcb;
+}
+
+#logout-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+}
+
+form > #logout-btn {
+    background-color: #5f2824;
+    border: none;
+    color: #f7f2dd;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.5em 1em 0.5em 1em;
+    width: 50%;
+    border-radius: 0.5em;
+    transition: all 0.3s;
+}
+
+form > #logout-btn:hover {
+    background-color: #5f2824;
+    color: #f7f2dd;
+    transform: scale(1.05);
+}
+
+#button-nav {
+    margin-top: 1em;
+    width: 100%;
+}
+
+#back-btn {
+    background-color: #5f2824;
+    color: #f7f2dd;
+    border: none;
+    font-size: 1em;
+    padding: 0.7em 1.3em 0.7em 1.3em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#back-btn:hover {
+    transform: scale(1.05);
+}
+
+#add-transaction-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 1.5em;
+    background-color: #E8E3CD;
+    border-radius: 0.5em;
+    border: 2px solid #8c716f;
+}
+
+#add-transaction-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    padding: 2.3em;
+    width: 100%;
+    gap: 1.5em;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    gap: 0.5em;
+    font-size: 1.2em;
+}
+
+.form-group > label {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em;
+    width: 100%;
+    border-radius: 0.5em;
+    border: 0.01em solid #8c716f;
+    font-size: 1em;
+    text-align: left;
+    background-color: #f5f2e6;
+    color: #4e606f;
+}
+
+.form-item::placeholder {
+    color: #4e606f;
+}
+
+select > option {
+    background-color: #f5f2e6;
+    color: #4e606f;
+}
+
+input[type="date"] {
+    font-family: Poppins, sans-serif;
+    font-size: 0.8em;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: #bdcdd9;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: transform 0.3s;
+}
+
+::-webkit-calendar-picker-indicator:hover {
+    transform: scale(1.05);
+}
+
+#add-transaction-btn {
+    background-color: #294c4b;
+    color: #f7f2dd;
+    border: 3px solid #232640;
+    padding: 0.7em 1.3em 0.7em 1.3em;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#add-transaction-btn:hover {
+    transform: scale(1.02);
+} 
