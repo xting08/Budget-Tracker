@@ -210,6 +210,12 @@ $database = 'cashcompass';
 
 ---
 
+## 📹 Video Demo
+
+📺 **Watch the full demo on Google Drive:** [Click here to view](https://drive.google.com/file/d/1iLVqlqnUwTk8Xq_WAg3oVbQTs8qpmudk/view?usp=sharing)
+
+---
+
 ## 👤 Author
 
 **Yoon Xiao Ting**  
